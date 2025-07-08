@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(to right, #d0f0ff,#e8d0ff);
+    text-align:center;
+}
+header{
+    padding-top:50px;
+}
+h1{
+    font-size:2.5rem;
+    color:#2d2d2d;
+    margin-bottom:10px;
+}
+p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+    color:#444;
+}
+.contact-icons{
+    display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+padding:0 20px 60px;
+}
+.icon-box{
+    width:100px;
+}
+.icon-box img{
+   width:70px;
+   height:70px;
+   border-radius:50%;
+   background-color:white;
+   padding:10px;
+   box-shadow:0 0 10px rgba(0, 0,0,0.1);
+}
+.icon-box p{
+    margin-top:10px;
+    font-size:1rem;
+font-weight:500;
+color:#2d2d2d;
+}
+/* ========= Responsive Design for Contact Section ========= */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .icon-box {
+    width: 90px;
+  }
+
+  .icon-box img {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+  }
+
+  .icon-box p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .contact-icons {
+    gap: 30px;
+    padding: 0 10px 40px;
+  }
+
+  .icon-box {
+    width: 80px;
+  }
+
+  .icon-box img {
+    width: 55px;
+    height: 55px;
+    padding: 7px;
+  }
+
+  .icon-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .contact-icons {
+    gap: 20px;
+    padding: 0 5px 30px;
+  }
+
+  .icon-box {
+    width: 70px;
+  }
+
+  .icon-box img {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+  }
+
+  .icon-box p {
+    font-size: 0.85rem;
+  }
+}

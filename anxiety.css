@@ -1,0 +1,145 @@
+.OuterHeaderDiv{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding:0 80px;
+    margin-bottom:0;
+}
+h1{
+    font-size:3.2rem;
+     padding:0 80px;
+    margin-bottom:10px;
+    font-family: sans-serif;
+}
+#header-paragraph{
+font-size:1rem;
+font-family:sans-serif;
+padding:0 80px;
+margin-top:0;
+margin-bottom:20px;
+}
+.header-img{
+    padding:0;
+    margin-top:0; 
+height:300px;
+width:500px;
+}
+header{
+    background:linear-gradient(135deg,#d5f3fc,#e5e0f7,#fbe4e0);
+}
+.main-div{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    padding:20px;
+    flex-wrap:wrap;
+}
+.innermaindiv{
+padding:20px 25px;
+border-radius:16px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:transform,0.3s,ease;
+background:linear-gradient(145deg, #ffffff,#f7f7f7);
+margin:20px;
+width:150px;
+flex:11 auto;
+}
+ h3{
+text-align:center;
+color:#222;
+background-color:lightblue;
+font-size:1.2rem;
+margin-top:0;
+margin-bottom: 15px;
+}
+#image2{
+    height:300px;
+    width:350px;
+}
+.navbar-div{
+  display:flex;
+  justify-content:space-evenly;
+}
+.navbar-para{
+    text-align:center;
+}
+.navbar{
+  background-color:black;
+color:antiquewhite
+}
+/* ============================
+   Responsive Breakpoints
+============================ */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    #header-paragraph {
+        text-align: center;
+    }
+
+    .OuterHeaderDiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .main-div {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .innermaindiv {
+        max-width: 80%;
+    }
+
+    .navbar-div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .innermaindiv {
+        padding: 15px;
+        margin: 15px auto;
+        width: 100%;
+    }
+
+    #image2,
+    .header-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar-div {
+        gap: 10px;
+    }
+}
+
+
+/* Tablet view (width ≤ 768px) */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile view (width ≤ 480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}

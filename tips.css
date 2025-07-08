@@ -1,0 +1,139 @@
+.main-div{
+    display:flex;
+    gap:70px;
+    justify-content:center;
+}
+.accordion{
+    border:1px solid #ccc;
+    background-color:#f593b0;
+    box-shadow:0 4px 6px rgba(0,0,0,0.05);
+    border-radius:12px;
+    transition: all 0.3s ease;
+    padding:12px;
+    font-family:sans-serif;
+}
+.heading{
+    font-size:4rem;
+    font-family:sans-serif;
+    font-style: italic;
+    margin-top:0;
+    padding:0;
+}
+.header-div{
+display:flex;
+justify-content:space-between;
+gap:200px;
+}
+header{
+background:linear-gradient(135deg, #6dbfa2,#6aa8d6,#d68ca5);
+}
+
+summary{
+    font-size:20px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    list-style:none;
+    cursor:pointer;
+    text-align:center;
+    text-decoration:underline;
+}
+details[open]{
+    background-color:#f0faff;
+}
+
+.content{
+    padding-top:10px;
+    animation: fadein 0.3s ease-in-out;
+}
+.navbar-div{
+  display:flex;
+  justify-content:space-evenly;
+}
+.navbar-para{
+    text-align:center;
+}
+.navbar{
+  background-color:black;
+color:antiquewhite
+}
+/* Tablet adjustments (width ≤ 1024px) */
+@media (max-width: 1024px) {
+    .header-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .main-div {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .accordion {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .navbar-div {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Mobile adjustments (width ≤ 768px) */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.2rem;
+        padding: 10px;
+    }
+
+    .accordion {
+        padding: 10px;
+    }
+
+    summary {
+        font-size: 18px;
+    }
+
+    .navbar-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-para {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Small mobile (width ≤ 480px) */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+
+    .accordion {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .navbar-para {
+        font-size: 12px;
+    }
+
+    .navbar-div a {
+        font-size: 14px;
+    }
+}

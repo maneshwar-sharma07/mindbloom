@@ -1,0 +1,79 @@
+/* Base styles for body */
+body {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Make paragraphs readable on small screens */
+p {
+    text-align: justify;
+}
+
+/* Headers spacing */
+h1, h3, h4, h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive layout for sections */
+div {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Make preformatted text scroll on small screens */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Responsive footer */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Make links in footer readable */
+footer a {
+    color: #bde4ff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4, h5 {
+        font-size: 1.2rem;
+    }
+
+    div {
+        padding: 8px;
+    }
+
+    pre {
+        font-size: 0.9rem;
+    }
+}

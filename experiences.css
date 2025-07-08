@@ -1,0 +1,54 @@
+.summary{
+    text-align:center;
+}
+h1{
+    text-align: center;
+    
+}
+.navbar-div{
+  display:flex;
+  justify-content:space-evenly;
+}
+.navbar-para{
+    text-align:center;
+}
+.navbar{
+  background-color:black;
+color:antiquewhite
+}
+div{
+font-family:sans-serif;
+}
+/* Container for main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Space between each div section */
+main > div {
+  margin-bottom: 2rem;
+}
+
+/* Responsive navbar on small screens */
+@media (max-width: 600px) {
+  .navbar-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* Adjust font size for smaller devices */
+@media (max-width: 400px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+}

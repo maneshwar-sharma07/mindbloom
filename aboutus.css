@@ -1,0 +1,85 @@
+.main-div1{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:40px;
+padding:40px 80px;
+}
+.mainimg1{
+    width:250px;
+    border-radius:12px;
+}
+body{
+    background-color:beige;
+}
+header{
+    color:rgb(47, 103, 47);
+    box-shadow:100px;
+    text-align:center;
+    font-size:2.5rem
+}
+.main-div1 p{
+    font-family:'Poppins';
+    font-size:1.1rem;
+    line-height: 1.7rem;
+    flex:1.5;
+}/* ========= Responsive Design for .main-div1 Section ========= */
+@media (max-width: 1024px) {
+  .main-div1 {
+    padding: 30px 40px;
+    gap: 30px;
+  }
+
+  .mainimg1 {
+    width: 200px;
+  }
+
+  header {
+    font-size: 2rem;
+  }
+
+  .main-div1 p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-div1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 20px;
+  }
+
+  .mainimg1 {
+    width: 70%;
+  }
+
+  .main-div1 p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  header {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-div1 {
+    padding: 15px 20px;
+  }
+
+  .mainimg1 {
+    width: 90%;
+  }
+
+  .main-div1 p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+}
